@@ -1,0 +1,169 @@
+@font-face {
+  font-family: light;
+  src: url(../fonts/Raleway-Light.ttf); }
+
+@font-face {
+  font-family: bold;
+  src: url(../fonts/Raleway-Bold.ttf); }
+
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/Raleway-Medium.ttf); }
+
+@font-face {
+  font-family: italic;
+  src: url(../fonts/KaushanScript-Regular.otf); }
+
+.hero, .blog, .clients, .map {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten; }
+
+.section {
+  padding: 6vw 0; }
+
+.hero main h1:after, .section header h3:after, .clients .title:after {
+  border-bottom: 4px solid #f38181;
+  padding-top: 1rem;
+  content: "";
+  display: block;
+  width: 4rem;
+  margin: 0 auto; }
+
+.aboutus div section .item:hover .overlay, .team .item:hover .overlay, .whatWedo .item:hover .overlay {
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: -0.5rem;
+  left: -0.5rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Medium; }
+
+i {
+  color: #95e1d3; }
+
+span {
+  font-family: italic;
+  font-size: 1rem; }
+
+h2, h1, h3 {
+  font-family: bold; }
+
+figure {
+  margin: 0; }
+
+a:hover {
+  color: #ffe08a; }
+
+/*start hero section*/
+.active {
+  color: #ffe08a;
+  border-bottom: 2px solid #ffe08a; }
+
+.hero {
+  background-image: url("../img/29.png"), linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)); }
+  .hero nav a {
+    font-family: bold; }
+  .hero nav a.navbar-brand {
+    font-size: 2rem; }
+  .hero nav i {
+    font-size: 1.2rem; }
+  .hero main {
+    padding: 18vw 0; }
+    .hero main span {
+      font-size: 3rem; }
+    .hero main h1 {
+      font-size: 4rem;
+      margin: 0 auto; }
+      .hero main h1:after {
+        border-bottom: 4px solid #fff; }
+
+.section header {
+  margin-bottom: 4vw; }
+  .section header p {
+    width: 60%;
+    margin: 0 auto; }
+
+.aboutus div section .item .overlay {
+  display: none; }
+
+.state {
+  background-color: #95e1d3; }
+  .state h2 {
+    font-size: 2.9rem; }
+  .state h6 {
+    font-size: 0.7rem; }
+
+.services .media {
+  padding: 2vw 30px 2vw 30px; }
+
+.services i {
+  font-size: 2rem; }
+
+.blog {
+  background-image: url("../img/3.png"); }
+  .blog.section {
+    padding: 6vw 0 0 0; }
+  .blog .abs {
+    right: 20%;
+    top: 40%; }
+
+.block i {
+  padding: 1vw;
+  border: 2px solid #95e1d3;
+  font-size: 5rem; }
+
+.blockquote-footer::before {
+  color: #f38181;
+  font-size: 3rem; }
+
+.team .item .overlay {
+  display: none; }
+
+.whatWedo .item .overlay {
+  display: none; }
+
+.whatWedo .item:hover .overlay {
+  top: 0;
+  left: 0; }
+
+.clients {
+  background-image: url("../img/3.png"); }
+  .clients .title:after {
+    margin: 0; }
+
+.bg {
+  background: #95e1d3; }
+
+.map {
+  background-image: url("../img/30.png"); }
+
+.bg-pr {
+  background: #95e1d3; }
+
+.lab {
+  top: 60%;
+  left: -2%; }
+
+@media (min-width: 768px) {
+  .fiveth:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.5); }
+  .fiveth {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 1vw 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); } }
+
+@media (max-width: 767px) {
+  #navbarNav {
+    background: rgba(255, 255, 255, 0.562); }
+  .abs {
+    display: none; }
+  .aboutus .item {
+    margin-bottom: 2rem; } }
